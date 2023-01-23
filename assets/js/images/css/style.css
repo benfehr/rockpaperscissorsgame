@@ -25,3 +25,11 @@ h1 {
     width: 100%;
     text-align: center;
 }
+
+.btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 1rem;
+    size: 1rem;
+}
