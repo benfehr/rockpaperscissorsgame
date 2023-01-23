@@ -87,3 +87,18 @@ function evalHands(playerHand, computerHand) {
 
 
 
+function gameOver(winner) {
+    gameOverState = true
+    Swal.fire({
+        icon: `${winner === 'you' ? 'success' : 'error'}`,
+        title:`game over, ${winner} won`,
+        showDenyButton: true,
+        confirmButtonText: 'Reset Game',
+        denyButtonText: `Don't Reset`,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            resetGame()
+        }
+    })
+    console.log(`game over, ${winner} won`)
+}
