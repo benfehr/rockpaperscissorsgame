@@ -108,3 +108,10 @@ function updateScore() {
     computerScoreElement.innerText = computerScore
 }
 
+function resetGame() {
+    console.log('reset')
+    playerScore = 0
+    computerScore = 0
+    updateScore()
+    gameOverState = false
+}
