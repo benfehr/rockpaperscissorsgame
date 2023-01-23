@@ -15,3 +15,13 @@ h1 {
     display: flexbox;
     flex: auto;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    width: 100%;
+    text-align: center;
+}
