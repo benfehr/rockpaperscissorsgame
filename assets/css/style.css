@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body {
-    font: Poppins, Arial
+    font: Poppins, Arial;
+    font-weight: 300;
+    
 }
-
-
 
 h1 {
     flex: auto;
     position: relative;
     margin: auto;
+    font-size: 200%;
+}
+
+.results {
+    font-size: large;
+    text-align: center;
+    justify-content: center;
 }
 
 .container {
