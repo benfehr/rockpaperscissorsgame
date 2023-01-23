@@ -43,3 +43,9 @@ function playRound(playerSelection) {
     const playerHand = hands.find(hand => hand.name === playerSelection)
     evalHands(playerHand, computerHand)
 }
+
+function getComputerHand(){
+    const computerGuess = Math.floor(Math.random() * hands.length)
+    return hands[computerGuess]
+}
+
