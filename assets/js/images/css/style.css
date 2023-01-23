@@ -9,3 +9,9 @@ h1 {
     position: relative;
     margin: auto;
 }
+
+.container {
+    width: 100%;
+    display: flexbox;
+    flex: auto;
+}
