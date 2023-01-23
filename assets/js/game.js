@@ -81,7 +81,7 @@ function evalHands(playerHand, computerHand) {
 
     if (playerScore === 5 || computerScore === 5) {
         let winner = playerScore === 5 ? 'you' : 'computer'
-        gameOverState(winner)
+        gameOver(winner)
     }
 }
 
