@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+        </div>
+    </header>
+    
+    <div class="results">
+        <div>
+          You
+          <span class="result-score" playerScore>0</span>
+        </div>
+        <div data-final-column>
+          Computer
+          <span class="result-score" computerScore>0</span>
+        </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn">
+                    <img src="assets/images/rock.jpg" alt="rock" data-hand="rock">    
+                </button>
+                <button class="btn">
+                    <img src="assets/images/paper.jpg" alt="paper" data-hand="paper">    
+                </button>
+                <button class="btn">
+                    <img src="assets/images/scissors.jpg" alt="scissors" data-hand="scissors">    
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <button class="reset" id="reset"
+                onclick="resetGame()">Reset</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>
