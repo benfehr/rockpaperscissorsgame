@@ -102,3 +102,9 @@ function gameOver(winner) {
     })
     console.log(`game over, ${winner} won`)
 }
+
+function updateScore() {
+    playerScoreElement.innerText = playerScore
+    computerScoreElement.innerText = computerScore
+}
+
