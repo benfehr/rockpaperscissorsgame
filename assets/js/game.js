@@ -49,3 +49,33 @@ function getComputerHand(){
     return hands[computerGuess]
 }
 
+function evalHands(playerHand, computerHand) {
+    if (playerHand === computerHand) {
+        Swal.fire({
+            position: 'center',
+            icon: 'info',
+            title: "It's a draw",
+            showConfirmButton: false,
+            timer: 1500
+        })
+    } else if (playerHand.beats === computerHand.name) {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: "You win!",
+            showConfirmButton: false,
+            timer: 1500
+        })
+        playerScore++
+    } else {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: "Loser",
+            showConfirmButton: false,
+            timer: 1500
+        })
+        computerScore++
+    }
+    updateScore()
+}
