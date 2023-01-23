@@ -2,46 +2,55 @@
 
 body {
     font: Poppins, Arial;
-    font-weight: 300;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
     
 }
 
 h1 {
     flex: auto;
-    position: relative;
-    margin: auto;
     font-size: 200%;
     text-decoration: underline;
+    padding: 20px;
+    text-align: center;
 }
 
 .results {
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     justify-content: center;
 }
 
 .container {
-    width: 100%;
-    display: flexbox;
+    width: 75%;
     flex: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+button {
+    max width: 400px;
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
 }
-
 .col-12 {
     width: 100%;
     text-align: center;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.col-51 {
+    width: 100%;
+    text-align: center;
+    display: inline;
+    justify-content: center;
 }
 
 .btn {
     border: none;
     background: transparent;
     cursor: pointer;
-    margin: 1rem;
-    size: 1rem;
+    max-width: 400px;
 }
 
 .reset-switch {
@@ -76,3 +85,8 @@ h1 {
   background-color: #F082AC;
 }
 
+@media (min-width: 600px) {
+    .btn {
+        display: flex;
+    }
+}
