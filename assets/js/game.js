@@ -37,3 +37,9 @@ for (button of buttons) {
         }
     })
 }
+
+function playRound(playerSelection) {
+    const computerHand = getComputerHand()
+    const playerHand = hands.find(hand => hand.name === playerSelection)
+    evalHands(playerHand, computerHand)
+}
