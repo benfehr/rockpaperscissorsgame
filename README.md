@@ -1,108 +1,86 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors
 
-Welcome benfehr,
+Rock Paper Scissors is a game that requires no skill and the winner is determimed by pure luck. Unlike environmental factors that come from playing the game in person, playing against a computer gives the user a truly random response back.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img width="1070" alt="Screenshot 2023-01-24 at 21 23 33" src="https://user-images.githubusercontent.com/113368691/214419488-81408c31-4692-47ca-b9a8-d5091e455c2b.png">
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+# Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The page is sleak, simple and straight to the point.
 
-`python3 -m http.server`
+## Title
 
-A blue button should appear to click: _Make Public_,
+The title "Rock Paper Scissors" is displayed in the center of the page with a nice coloured background to help the text appear more stiking to the user.
 
-Another blue button should appear to click: _Open Browser_.
+<img width="1436" alt="Screenshot 2023-01-24 at 20 25 54" src="https://user-images.githubusercontent.com/113368691/214401229-6b0d4b46-93a5-429d-8573-cceb63c0ab4d.png">
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Score Area
 
-A blue button should appear to click: _Make Public_,
+There is a simple two line section showing the name 'You' and then 'Computer', bot followed by a number 0
 
-Another blue button should appear to click: _Open Browser_.
+<img width="308" alt="Screenshot 2023-01-24 at 21 25 11" src="https://user-images.githubusercontent.com/113368691/214420281-81cfc5ab-cf8d-4cb0-b224-6c48ab885a96.png">
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Image Buttons
 
-To log into the Heroku toolbelt CLI:
+The three images centered in the page show and image of a rock, a bundle of paper and a pair of scissors. The pictures were sourced from a free image site and are detailed and high quality. When the user moves their mouse over the images their cursor will change to a point, make it clear and tempted for the user to click on these icons, therefore commencing the game.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<img width="917" alt="Screenshot 2023-01-24 at 20 31 18" src="https://user-images.githubusercontent.com/113368691/214402487-9839c17c-7c04-4022-bd97-6e39c25106d9.png">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## On screen alerts
 
-------
+The game begins when the user clicks an image. This is then followed by an alert that comes on the screen which says either 'You win', 'it's a draw, or "loser". This signifies the end of the current round and updates the score section for the user or the computer. 
 
-## Release History
+<img width="407" alt="Screenshot 2023-01-24 at 20 36 27" src="https://user-images.githubusercontent.com/113368691/214404643-729e00f6-f078-4c66-935f-6d2123dbda6e.png">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<img width="388" alt="Screenshot 2023-01-24 at 20 36 57" src="https://user-images.githubusercontent.com/113368691/214406019-abba45f3-34db-44f8-8c7d-0b44c0e57299.png">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<img width="390" alt="Screenshot 2023-01-24 at 20 37 20" src="https://user-images.githubusercontent.com/113368691/214406170-1155f8b0-a915-4b7b-a1ae-be3e119fe2de.png">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Reset button
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+There is a reset button located underneath the images which resets the game for the user entirely
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<img width="148" alt="Screenshot 2023-01-24 at 20 53 58" src="https://user-images.githubusercontent.com/113368691/214421655-cfa6e48d-5dfa-489c-ac88-3a8df9390751.png">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## End of game pop up
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+When the game is completed the user will see a pop up asking whether or not to reset the game. The message is different if the user wins or the computer wins.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img width="511" alt="Screenshot 2023-01-24 at 20 54 15" src="https://user-images.githubusercontent.com/113368691/214422287-96097724-45d3-4860-877d-157b76a49ade.png">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<img width="511" alt="Screenshot 2023-01-24 at 20 54 49" src="https://user-images.githubusercontent.com/113368691/214422431-62c990e0-7be9-437e-bd87-f82e43b98d84.png">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+. I have check the game works on all browsers including Chrome, Firefox and Safari
+. The game results are accurate and the javascript is function correctly
+. I confirmed the accessibility of the site by running it through chromes developer tool 'Lighthouse' and received a score of 96
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img width="534" alt="Screenshot 2023-01-24 at 21 32 15" src="https://user-images.githubusercontent.com/113368691/214424770-9907d131-a464-4660-adf7-89e4da459338.png">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Bugs
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+. No bugs have been found when running the site
 
-------
+## Validator Testing
 
-## FAQ about the uptime script
+. HTML - found a couple of errors saying to use more headings in the html
+. CSS - No errors were found.
 
-**Why have you added this script?**
+## Deployment
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+. Site was depolyed to GitHub pages via the settings page.
+. Live link can be found here https://benfehr.github.io/rockpaperscissorsgame/
 
-**How will this affect me?**
+## Credits
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Content
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+. The CSS for the reset button was taken from the website https://getcssscan.com/css-buttons-examples
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Media
 
-**So….?**
+. The images for the buttons were downloaded from unsplash.com
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
