@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-body {
-    font: Poppins, Arial;
-    font-weight: 600;
+* {
     margin: 0;
     padding: 0;
-    
+    border: none;
+}
+body {
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    color: black;
 }
 
+
 h1 {
-    flex: auto;
-    font-size: 200%;
+    font-size: 500%;
     text-decoration: underline;
+    text-transform: capitalize;
     padding: 20px;
     text-align: center;
 }
@@ -19,25 +23,31 @@ h1 {
 .results {
     font-size: x-large;
     text-align: center;
-    justify-content: center;
+    padding: 50px 0px;
+    margin: 20px auto;
 }
 
 .container {
-    width: 75%;
-    flex: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    display: inline-flex;
+    padding: 50x;
+    justify-content: center;
 }
-button {
-    max width: 400px;
 
+#rock-button {
+    float: left;
+    margin: auto;
 }
-.col-12 {
-    width: 100%;
-    text-align: center;
-    display: inline;
-    flex-wrap: wrap;
+
+#paper-button {
+    margin: auto;
 }
+
+#scissors-button {
+    float: right;
+}
+
+
 
 .col-51 {
     width: 100%;
@@ -46,11 +56,12 @@ button {
     justify-content: center;
 }
 
-.btn {
-    border: none;
+.btn img {
+    border: 1rem;
     background: transparent;
     cursor: pointer;
-    max-width: 400px;
+    width: 300px;
+    margin: auto;
 }
 
 .reset-switch {
@@ -60,23 +71,14 @@ button {
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -85,8 +87,3 @@ button {
   background-color: #F082AC;
 }
 
-@media (min-width: 600px) {
-    .btn {
-        display: flex;
-    }
-}
